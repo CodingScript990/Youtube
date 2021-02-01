@@ -14,7 +14,25 @@
 <body>
     <!-- Header -->
     <header>
-        
+        <div class="header container">
+            <div class="header left">
+                <div class="menu-button">메뉴버튼</div>
+                <div class="logo">로고</div>
+            </div>
+            <div class="header search">
+                <form  method="get">
+                    <label for="search-keyword" hidden>검색</label>
+                    <input type="text" name="query" id="search-keyword" placeholder="Search" maxlength="50">
+                    <input type="submit" value="search">
+                    <span>search</span>
+                </form>
+                <div class="microphone-icon">마이크 아이콘</div>
+            </div>
+            <div class="header right">
+                <div class="notify">알림</div>
+                <div class="profile">프로필</div>
+            </div>
+        </div>
     </header>
 </body>
 </html>

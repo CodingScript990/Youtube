@@ -8,15 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="YT:type" content="website">
     <title>YouTube</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="icon" href="resources/image/logo.png">
     <link rel="stylesheet" href="resources/stylesheets/common.css">
+    <script defer src="resources/scripts/router.js"></script>
     <script defer src="resources/scripts/ajax.js"></script>
     <script defer src="resources/scripts/side_menu.js"></script>
     <script defer src="resources/scripts/common.js"></script>
 </head>
-<body>
+<body class="preload">
     <!-- Header -->
     <header>
         <div class="logo">
@@ -42,12 +42,11 @@
             </div>
         </div>
     </header>
-    <!-- aside -->
-    <aside>
+    <aside class="scroll">
         <div></div>
         <ul class="F1">
             <li class="selected"><span></span><span>홈</span></li>
-            <li><span></span><span>탐색</span></li>
+            <li><span></span><span>인기</span></li>
             <li><span></span><span>구독</span></li>
         </ul>
         <ul class="S2">
@@ -63,8 +62,8 @@
             <li><span></span><span>게임</span></li>
             <li><span></span><span>영화</span></li>
             <li><span></span><span>뉴스</span></li>
-            <li><span></span><span>실시간</span></li>
             <li><span></span><span>학습</span></li>
+            <li><span></span><span>스포츠</span></li>
             <li><span></span><span>360° 동영상</span></li>
         </ul>
         <ul class="F4">
@@ -108,5 +107,6 @@
     <main>
 
     </main>
+    <div id="js-popup" class="popup"></div>
 </body>
 </html>

@@ -1,0 +1,198 @@
+/* header */
+
+body > header {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
+
+body > header {
+    background-color: #ffffffa0;
+}
+
+body > header > .logo {
+    width: 15rem;
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+body > header > .logo > .menu {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+body > header > .logo > * {
+    margin: 1rem;
+}
+
+body > header > .logo > *:nth-child(1) {
+    margin-left: 1.75rem;
+}
+
+body > header > .logo > .menu {
+    background-image: url("../image/menu-button.png");
+}
+
+body > header > .logo > .image {
+    width: 5rem;
+    height: 1.5rem;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+body > header > .logo > .image > div {
+    top: -0.5rem;
+    left: calc(100% + 0.2rem);
+    color: #606060;
+    display: inline-block;
+    font-size: 0.675rem;
+    position: relative;
+}
+
+body > header > .logo > .image {
+    background-image: url("../image/youtube_logo.png");
+}
+
+body > header > .search {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body > header > .search > form > input {
+    border: 0.0625rem solid #c0c0c0;
+}
+
+body > header > .search > form > input {
+    border-radius: 0.125rem;
+    outline: none;
+    padding: 0.25rem 0.5rem;
+}
+
+body > header > .search > form > input[type="text"] {
+    width: 40vw;
+}
+
+body > header > .search > form > input[type="submit"] {
+    width: 4.5rem;
+    background-position: center;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+body > header > .search > form > input[type="submit"]:hover {
+    filter: brightness(0.8);
+    background-image: url("../image/header.search-dark.png");
+}
+
+body > header > .search > form > input[type="submit"] {
+    background-image: url("../image/header.search-light.png");
+}
+
+body > header > .search > form > input[type="submit"]:hover + span {
+    top: 100%;
+    opacity: 1;
+}
+
+body > header > .search > form > span {
+    top: calc(100% - 0.5rem);
+    background-color: #808080;
+    border-radius: 0.125rem;
+    color: #ffffff;
+    opacity: 0;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    pointer-events: none;
+    transform: translateX(-140%);
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+body > header > .search > form > input[type="text"]:focus {
+    border: 0.0625rem solid #065fd4;
+}
+
+body > header > .search > form > input[type="submit"] {
+    left: -0.25rem;
+    position: relative;
+}
+
+body > header > .user > *:last-child {
+    margin-right: 1.5rem;
+}
+
+body > header > .user > .button {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+body > header > .user {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body > header > .user > * {
+    margin: 0 0.75rem;
+}
+
+body > header > .user > .button.app {
+    background-image: url("../image/header.user.app-light.png");
+}
+
+body > header > .user > .button.setting {
+    background-image: url("../image/header.user.setting-light.png");
+}
+
+
+body > header > .user > .login {
+    align-items: center;
+    border-radius: 0.125rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 0.35rem 0.7rem;
+}
+
+body > header > .user > .login {
+    border: 0.0625rem solid #065fd4;
+    color: #065fd4;
+}
+
+body > header > .user > .login > div {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+body > header > .user > .login > div {
+    background-color: #065fd4;
+    background-image: url("../image/header.user.login-light.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}

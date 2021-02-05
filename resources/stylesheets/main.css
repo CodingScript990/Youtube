@@ -1,0 +1,6 @@
+body > main {
+    top: 0;
+    left: 15rem;
+    width: calc(100% - 15rem);
+    position: relative;
+}
